@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Cottage - Handcrafted Bakery Delights</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="assets/logo.svg" alt="Cookie Cottage" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Handcrafted Bakery Delights</h1>
+                <p>Indulge in our freshly baked treats made with love and premium ingredients</p>
+                <a href="#products" class="btn primary-btn">Explore Our Treats</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Signature Creations</h2>
+                <p>Discover our handcrafted bakery delights made fresh daily</p>
+            </div>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="cakes">Cakes</button>
+                <button class="category-btn" data-category="brownies">Brownies</button>
+                <button class="category-btn" data-category="cookies">Cookies</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+            </div>
+            <div class="product-gallery">
+                <!-- Cakes -->
+                <div class="product-card" data-category="cakes">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1529566533972-fe622409cc14" alt="Strawberry Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Strawberry Delight Cake</h3>
+                        <p>Fresh strawberries layered with vanilla cream and soft sponge cake</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cakes">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1491185474061-a1dad922eeab" alt="Chocolate Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Chocolate Cake</h3>
+                        <p>Rich chocolate layers with ganache frosting, a chocolate lover's dream</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cakes">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1694168755444-001d2c137800" alt="Fruit Cake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mixed Fruit Paradise</h3>
+                        <p>Light sponge cake topped with seasonal fresh fruits and cream</p>
+                    </div>
+                </div>
+                
+                <!-- Brownies -->
+                <div class="product-card" data-category="brownies">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" alt="Triple Chocolate Brownie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Triple Chocolate Brownie</h3>
+                        <p>Rich, fudgy brownie with three types of premium chocolate</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="brownies">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1612539466296-4ecf1db303e3" alt="Nutella Brownie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nutella Hazelnut Brownie</h3>
+                        <p>Fudgy brownie with rich Nutella swirls and crunchy hazelnuts</p>
+                    </div>
+                </div>
+                
+                <!-- Cookies -->
+                <div class="product-card" data-category="cookies">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1523294587484-bae6cc870010" alt="Chocolate Chip Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Chocolate Chip</h3>
+                        <p>Soft-baked cookies with generous chocolate chunks</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cookies">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907" alt="Assorted Cookies">
+                    </div>
+                    <div class="product-info">
+                        <h3>Assorted Cookie Box</h3>
+                        <p>Selection of our best-selling cookies in one delightful box</p>
+                    </div>
+                </div>
+                
+                <!-- Pastries -->
+                <div class="product-card" data-category="pastries">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1695643912249-d697e81b8371" alt="Fruit Tart">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fresh Fruit Tart</h3>
+                        <p>Buttery crust filled with vanilla custard and topped with seasonal fruits</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pastries">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1680013587275-ca639ced708c" alt="Croissants">
+                    </div>
+                    <div class="product-info">
+                        <h3>Buttery Croissants</h3>
+                        <p>Flaky, golden-brown croissants made with imported French butter</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pastries">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1632134964015-9300cf2314cf" alt="Cinnamon Rolls">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cinnamon Swirl Rolls</h3>
+                        <p>Soft, gooey cinnamon rolls with cream cheese frosting</p>
+                    </div>
+                </div>
+                <div class="product-card" data-category="cakes">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a" alt="Cheesecake">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Cheesecake</h3>
+                        <p>Creamy, smooth cheesecake with a graham cracker crust</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Cookie Cottage</h2>
+                <p>Our story, our passion, and the people behind the delicious treats</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1689037676470-b72230d5236e" alt="Our Bakery">
+                </div>
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Cookie Cottage was born from a passion for creating delicious, high-quality baked goods using traditional methods and premium ingredients. What started as a small home kitchen operation has blossomed into a beloved local bakery.</p>
+                    <p>We believe in crafting each item with care and attention to detail, ensuring that every bite brings joy and satisfaction to our customers.</p>
+                    <p>From classic favorites to innovative creations, our team of talented bakers puts their heart into everything they make.</p>
+                </div>
+            </div>
+            <div class="about-team">
+                <div class="team-header">
+                    <h3>Meet Our Team</h3>
+                </div>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-photo founder-photo">
+                            <img src="attached_assets/female.jpg" alt="Head Baker & Founder">
+                        </div>
+                        <h4>Head Baker & Founder</h4>
+                        <p>With a passion for baking that spans over a decade, our founder brings creativity and precision to every recipe at Cookie Cottage.</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> +917033687006</p>
+                            <p><i class="fas fa-envelope"></i> contact@cookiecottage.com</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="https://images.unsplash.com/photo-1615497419017-50b4adab1b8c" alt="Our Bakery Interior">
+                        </div>
+                        <h4>Our Bakery</h4>
+                        <p>Visit our warm, inviting space where the magic happens. The aroma of freshly baked goods welcomes you as you step through our doors.</p>
+                        <div class="bakery-hours">
+                            <p><i class="far fa-clock"></i> Open 7AM-7PM (Mon-Sat)</p>
+                            <p><i class="far fa-clock"></i> 9AM-5PM (Sunday)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Love</h2>
+                <p>See what our customers are saying about our baked goods</p>
+            </div>
+            <div class="reviews-container">
+                <div class="review-header">
+                    <h3>Our Customers' Feedback</h3>
+                    <div class="review-controls">
+                        <button id="prev-review" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+                        <button id="next-review" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="review-slider">
+                    <div class="review-slide">
+                        <div class="review-content">
+                            <div class="review-text">
+                                <p>"Rich, fudgy, and incredibly moist, it had the perfect balance of sweetness and chocolatey goodness. The texture was soft, yet dense enough to give that satisfying bite. The slight crisp on the top layer added a delightful contrast to the gooey center. Every bite was an indulgent treat."</p>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-author">
+                                <p>Salim S.</p>
+                                <p class="review-product">Triple Chocolate Brownie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-content">
+                            <div class="review-text">
+                                <p>"The Nutella hazelnut was sooo yummy! Really enjoyed it and love The Cookie Cottage. Will definitely be ordering again soon!"</p>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-author">
+                                <p>Priya M.</p>
+                                <p class="review-product">Nutella Hazelnut Brownie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-content">
+                            <div class="review-text">
+                                <p>"The brownies were sooo yummy and fresh. I just loved it! Everyone in my family loved it too. Please make 1 box again for me!"</p>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-author">
+                                <p>Rahul K.</p>
+                                <p class="review-product">Walnut Brownie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-content">
+                            <div class="review-text">
+                                <p>"Choco Lava was awesome bro! Loved the packaging too. I had something like this for the first time. So so so proud of you!"</p>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-author">
+                                <p>Ananya D.</p>
+                                <p class="review-product">Chocolate Lava Cake</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instagram-section">
+                <h3>Customer Photos</h3>
+                <div class="instagram-feed">
+                    <div class="insta-post">
+                        <div class="insta-img">
+                            <img src="attached_assets/WhatsApp Image 2025-04-30 at 23.24.34_1e604aca.jpg" alt="Customer Review - Chat">
+                        </div>
+                    </div>
+                    <div class="insta-post">
+                        <div class="insta-img">
+                            <img src="attached_assets/WhatsApp Image 2025-04-30 at 23.24.35_1af699c9.jpg" alt="Customer Review - Reviews">
+                        </div>
+                    </div>
+                    <div class="insta-post">
+                        <div class="insta-img">
+                            <img src="attached_assets/WhatsApp Image 2025-04-30 at 23.24.35_5bf73f96.jpg" alt="Customer Review - Feedback">
+                        </div>
+                    </div>
+                    <div class="insta-post">
+                        <div class="insta-img">
+                            <img src="attached_assets/WhatsApp Image 2025-04-30 at 23.24.35_e0b61da1.jpg" alt="Customer Review - Brownie">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn secondary-btn">Follow Us on Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Have questions or want to place a special order?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Baker Street, Sweetville</p>
+                            <p>Open 7AM-7PM (Mon-Sat) | 9AM-5PM (Sunday)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+917033687006</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>contact@cookiecottage.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="inquiry-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Your Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.svg" alt="Cookie Cottage" class="logo-img footer-logo-img">
+                    <p>Handcrafted bakery delights made with love</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for new flavors and special offers</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cookie Cottage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

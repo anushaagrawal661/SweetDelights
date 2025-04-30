@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="140" viewBox="0 0 400 140">
+  <!-- Top horizontal line -->
+  <line x1="50" y1="20" x2="350" y2="20" stroke="#9c6644" stroke-width="3" />
+  
+  <!-- Main Logo Text -->
+  <text x="55" y="70" font-family="'Playfair Display', serif" font-size="40" font-weight="bold" fill="#9c6644">Cookie Cottage</text>
+  
+  <!-- Cookie Icon -->
+  <circle cx="340" cy="55" r="12" fill="#9c6644" />
+  <circle cx="335" cy="50" r="2" fill="#f2e9e1" />
+  <circle cx="345" cy="52" r="2" fill="#f2e9e1" />
+  <circle cx="342" cy="60" r="2" fill="#f2e9e1" />
+  <circle cx="333" cy="58" r="2" fill="#f2e9e1" />
+  
+  <!-- Tagline -->
+  <text x="120" y="100" font-family="'Poppins', sans-serif" font-size="16" font-style="italic" fill="#ff9494">Handcrafted with love</text>
+  
+  <!-- Bottom horizontal line -->
+  <line x1="50" y1="120" x2="350" y2="120" stroke="#9c6644" stroke-width="3" />
+</svg>
